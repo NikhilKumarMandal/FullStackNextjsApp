@@ -19,10 +19,10 @@ async function dbConnect(): Promise<void> {
         console.log(db);
 
         connection.isConnected = db.connections[0].readyState
+        console.log(connection.isConnected);
         
         console.log("DB Connected Successfully");
-
-        
+   
     } catch (error) {
 
         console.log("Dtabase connections failed",error);
